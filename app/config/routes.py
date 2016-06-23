@@ -25,13 +25,13 @@ routes['default_controller'] = 'Welcome'
     Note the '#' symbol to specify the controller method to use.
     Note the preceding slash in the url.
     Note that the http verb must be specified in ALL CAPS.
-    
+
     If the http verb is not provided pylot will assume that you want the 'GET' verb.
 
     You can also use route parameters by using the angled brackets like so:
     routes['PUT']['/users/<int:id>'] = 'users#update'
 
-    Note that the parameter can have a specified type (int, string, float, path). 
+    Note that the parameter can have a specified type (int, string, float, path).
     If the type is not specified it will default to string
 
     Here is an example of the restful routes for users:
@@ -44,3 +44,14 @@ routes['default_controller'] = 'Welcome'
     routes['PATCH']['/users/<int:id>'] = 'users#update'
     routes['DELETE']['/users/<int:id>'] = 'users#destroy'
 """
+routes['default_controller'] = 'Logins'
+
+
+routes['/logins/success'] = 'Logins#success'
+routes['/logins/back'] = 'Logins#back'
+
+routes['POST']['/logins/login'] = 'Logins#login'
+routes['POST']['/logins/register'] = 'Logins#register'
+
+
+

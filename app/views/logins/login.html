@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login/Register</title>
+</head>
+<body>
+    <h1>Registration</h1>
+
+    <form action="/logins/register" method="post">
+        First Name: <input type="text" name="f_name">
+        Last Name: <input type="text" name="l_name">
+        Email: <input type="text" name="email">
+        Password: <input type="text" name="pw">
+        Confirm Password: <input type="text" name="confirm_pw" >
+        <input type="submit" value="Register">
+    </form>
+
+    <h1>Login</h1>
+
+    <form action="/logins/login" method="post">
+        Email: <input type="text" name="email">
+        Password: <input type="text" name="pw">
+        <input type="submit" value="Login">
+    </form>
+</body>
+</html>
